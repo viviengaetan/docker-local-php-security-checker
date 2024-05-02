@@ -6,9 +6,9 @@ on:
     types: [published]
 
 env:
-  REGISTRY: ghcr.io
+  REGISTRY: docker.io
   LOCAL_PHP_SECURITY_CHECKER_VERSION: "2.0.6"
-  IMAGE_NAME: viviengaetan69/docker-local-php-security-checker
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   push_to_registry:
