@@ -7,8 +7,10 @@ RUN curl -L -o local-php-security-checker https://github.com/fabpot/local-php-se
 
 FROM scratch AS executable
 
-LABEL maintainer="Gaëtan Verlhac <viviengaetan69@gmail.com>"
-LABEL source="https://github.com/viviengaetan/docker-local-php-security-checker"
+LABEL org.opencontainers.image.authors="Gaëtan Verlhac <viviengaetan69@gmail.com>"
+LABEL org.opencontainers.image.source="https://github.com/viviengaetan/docker-local-php-security-checker"
+LABEL org.opencontainers.image.licenses="AGPL-3.0"
+LABEL org.opencontainers.image.base.name="scratch"
 
 COPY --link --from=downloader --chown=root:root /home/curl_user/local-php-security-checker /local-php-security-checker
 COPY --link --from=downloader /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
