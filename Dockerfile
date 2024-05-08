@@ -1,8 +1,8 @@
 FROM curlimages/curl:8.7.1 AS downloader
 
-ARG LOCAL_PHP_SECURITY_CHECKER_VERSION="2.0.6"
+ARG LOCAL_PHP_SECURITY_CHECKER_VERSION="2.1.0"
 
-RUN curl -L -o local-php-security-checker https://github.com/fabpot/local-php-security-checker/releases/download/v${LOCAL_PHP_SECURITY_CHECKER_VERSION}/local-php-security-checker_${LOCAL_PHP_SECURITY_CHECKER_VERSION}_linux_amd64; \
+RUN curl -L -o local-php-security-checker https://github.com/fabpot/local-php-security-checker/releases/download/v${LOCAL_PHP_SECURITY_CHECKER_VERSION}/local-php-security-checker_linux_amd64; \
     chmod +x local-php-security-checker
 
 FROM scratch AS executable
