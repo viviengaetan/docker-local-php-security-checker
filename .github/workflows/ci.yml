@@ -21,7 +21,7 @@ jobs:
           - 5001:5000
 
     env:
-      LOCAL_PHP_SECURITY_CHECKER_VERSION: "2.1.0"
+      LOCAL_PHP_SECURITY_CHECKER_VERSION: "2.1.1"
       TEST_TAG: localhost:5001/actions/docker-local-php-security-checker:latest
 
     steps:
