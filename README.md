@@ -11,7 +11,7 @@ Parameters and return codes are documented on the tool's Readme. You can run it 
 
 ## Locally
 ```shell
-docker run -v /path/to/your/project:/project:ro viviengaetan69/docker-local-php-security-checker:0.1.5 -path=/project
+docker run -v /path/to/your/project:/project:ro viviengaetan69/docker-local-php-security-checker:0.1.6 -path=/project
 ```
 
 ## Gitlab CI
@@ -21,7 +21,7 @@ docker run -v /path/to/your/project:/project:ro viviengaetan69/docker-local-php-
 
 ````yaml
 security:advisories:
-  image: viviengaetan69/docker-local-php-security-checker:0.1.5
+  image: viviengaetan69/docker-local-php-security-checker:0.1.6
   stage: sast
   script:
   - cd app

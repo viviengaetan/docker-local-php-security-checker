@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  LOCAL_PHP_SECURITY_CHECKER_VERSION: "2.1.1"
+  LOCAL_PHP_SECURITY_CHECKER_VERSION: "2.1.3"
   IMAGE_NAME: viviengaetan69/docker-local-php-security-checker
 
 jobs:
